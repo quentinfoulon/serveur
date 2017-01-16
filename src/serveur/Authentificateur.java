@@ -35,7 +35,6 @@ public class Authentificateur implements Runnable {
 		while(!authentifier){
 						
 			login = in.readLine();
-			
 			pass = in.readLine();
 
 			System.out.println(login +" "+pass);
