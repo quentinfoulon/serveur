@@ -32,7 +32,6 @@ public class Authentificateur implements Runnable {
 			
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new PrintWriter(socket.getOutputStream());
-			//for (int i=0;i<100;i++){
 		while(!authentifier){
 						
 			login = in.readLine();
