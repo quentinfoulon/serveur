@@ -34,8 +34,7 @@ public class Authentificateur implements Runnable {
 			out = new PrintWriter(socket.getOutputStream());
 			//for (int i=0;i<100;i++){
 		while(!authentifier){
-			//if(in.readLine().equals("connexion")){
-			
+						
 			login = in.readLine();
 			
 			pass = in.readLine();
