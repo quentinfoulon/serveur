@@ -41,9 +41,10 @@ public class Authentificateur implements Runnable {
 
 			if(isValid(login, pass)){
 				out.println("connecter");
-				
 				out.flush();
-				
+				System.out.println(id +" vient de se connecter ");
+				out.println(id);
+				out.flush();
 				System.out.println(login +" vient de se connecter ");
 				
 				authentifier = true;
@@ -113,7 +114,7 @@ public class Authentificateur implements Runnable {
 
                     try {
                         id = resultats.getString( "id" );
-                        //System.out.println(soustheme);
+                        System.out.println(id);
                         //String theme = resultats.getString( "theme" );
                         //System.out.println(theme);
                     } catch (SQLException e) {
